@@ -9,7 +9,7 @@
 	
 	<bean id="cricket" 
 	class="pl.krystian.Spring_value_injection.CricketCoach"
-	scope="singleton">
+	scope="prototype">
 	</bean>  
   
 </beans>
