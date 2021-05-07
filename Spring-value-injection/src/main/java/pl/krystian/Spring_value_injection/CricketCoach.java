@@ -20,4 +20,12 @@ public class CricketCoach {
 	}
 	
 	
+	public void BeanInitialized() {
+    	System.out.println("Bean is now initialized");
+    }
+
+    public void BeanDestroyed() {
+    	System.out.println("Bean is closing now");
+    }
 }
+

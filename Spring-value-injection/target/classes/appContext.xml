@@ -9,7 +9,10 @@
 	
 	<bean id="cricket" 
 	class="pl.krystian.Spring_value_injection.CricketCoach"
-	scope="prototype">
+	scope="prototype"
+	init-method="BeanInitialized"
+	destroy-method="BeanDestroyed">
+	
 	</bean>  
   
 </beans>

@@ -23,5 +23,9 @@ public class App
     	
     	System.out.println(cricket.getEmailAddress());
     	System.out.println(cricket2.getEmailAddress());
+    	
+    	context.close();
     }
 }
+
+
