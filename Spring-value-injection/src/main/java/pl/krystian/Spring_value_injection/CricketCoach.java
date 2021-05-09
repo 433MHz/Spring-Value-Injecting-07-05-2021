@@ -14,7 +14,7 @@ public class CricketCoach implements Coach{
 
 	
 	@Autowired
-	public void addNewName(Name name) {
+	public CricketCoach(Name name) {
 		this.name = name;
 	}
 	
