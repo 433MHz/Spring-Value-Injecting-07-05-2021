@@ -6,13 +6,17 @@ import org.springframework.stereotype.Component;
 @Component
 public class CricketCoach implements Coach{
 
-	@Autowired
 	private Name name;
 
 	public String getData() {
 		return this.name.getName();
 	}
 
+	
+	@Autowired
+	public void setName(Name name) {
+		this.name = name;
+	}
 	
 }
 
