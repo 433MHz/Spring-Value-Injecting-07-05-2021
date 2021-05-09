@@ -13,11 +13,13 @@ public class App
 	
     public static void main( String[] args )
     {
-    	ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("appContext.xml");
+    	AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
     	
     	DataShow data = (DataShow) context.getBean("dataShow");
-    	
     	System.out.println(data.getData());
+    	
+    	
+    	context.close();
     }
 }
 

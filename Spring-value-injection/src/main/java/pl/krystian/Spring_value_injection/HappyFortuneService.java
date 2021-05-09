@@ -9,4 +9,5 @@ public class HappyFortuneService implements FortuneService {
 		return "Happy";
 	}
 
+
 }
